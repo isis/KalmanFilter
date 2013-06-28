@@ -27,11 +27,11 @@
 
 #include <Kalman.h> // Source: https://github.com/TKJElectronics/KalmanFilter
 
-static const int pin_gyrox = A0;
-static const int pin_gyroy = A1;
-static const int pin_accx = A3;
-static const int pin_accy = A2;
-static const int pin_accz = A4;
+static const int pin_gyrox = A0;  // X AXIS ROTATION V of ENC-03R
+static const int pin_gyroy = A1;  // Y AXIS ROTATION V of ENC-03R
+static const int pin_accx = A3;  // accelaration Y of KXR94-2050 (rotated left 90 degree on Breadboard)
+static const int pin_accy = A2;  // accelaration X of KXR94-2050 (rotated left 90 degree on Breadboard)
+static const int pin_accz = A4;  // accelaration Z of KXR94-2050
 
 Kalman kalmanX; // Create the Kalman instances
 Kalman kalmanY;
